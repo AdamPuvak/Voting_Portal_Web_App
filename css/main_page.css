@@ -1,0 +1,148 @@
+.container {
+    height: calc(100vh - 56px);
+    background-color: #f4f4f4;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    max-width: 100%;
+}
+
+#questionsTable {
+    width: 100%;
+}
+
+#questionsTable_wrapper {
+    padding: 2em;
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    display: flex;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: max-content;
+
+}
+
+.question-id-cell {
+    cursor: pointer;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.remove-image, .copy-image  {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.edit-image{
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+#questionsTable th,
+#questionsTable td {
+    text-align: center;
+}
+
+.select-boxes-div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 1.5em 0;
+}
+
+.select-boxes-div select {
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+}
+
+.align-to-left {
+    text-align: left;
+}
+
+
+@media (max-width: 991px) {
+    .container {
+        padding: 2em 0;
+    }
+
+    .select-boxes-div {
+        flex-direction: column;
+    }
+
+    .select-boxes-div select {
+        width: 80%;
+    }
+}
+
+.centered-items {
+    text-align: center;
+}
+
+#export_button {
+    background-color: #4CAF50;
+    border: 0.1em solid #1e7a32;
+    border-radius: 0.4em;
+    color: white;
+    padding: 0.6em 1.6em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#questionsTable_wrapper {
+    padding: 2em;
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 767px) {
+    .container {
+        height: auto;
+        padding: 1rem;
+    }
+
+    #questionsTable_wrapper {
+        padding: 1em;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+    }
+
+    .select-boxes-div select {
+        width: 100%;
+    }
+
+    #export_button {
+        padding: 0.4em 1.2em;
+    }
+}
